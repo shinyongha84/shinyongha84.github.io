@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>신용하 | I'm Order Project Reviews</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="../libs/font-awesome/css/font-awesome.min.css">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+<div id="mobile-menu-open" class="shadow-large">
+    <i class="fa fa-bars" aria-hidden="true"></i>
+</div>
+<!-- End #mobile-menu-toggle -->
+<header>
+    <ul id="menu" class="shadow">
+        <li>
+            <a onclick="history.back()">돌아가기</a>
+        </li>
+    </ul>
+</header>
+
+<div id="project-reviews">
+    <div id="project-reviews-content">
+        <h1>I'm Order</h1>
+        <h2>Project Reviews</h2>
+        <h3>2021.06 ~ 2021.08</h3>
+    </div>
+    <!-- End #project-reviews-content -->
+
+    <div id="project-reviews-overlay" style="background: #db4747;"></div>
+
+    <!-- End #project-reviews-down -->
+</div>
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="heading">My Work content</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    Kotlin(Spring) / Kotlin(Android) & Swift(iOS) / Angular.js / Database & 쿼리 및 프로시저 작성 / Build & Deploy Script 업무를 진행하였습니다.<br><br>
+                    <b>ㆍSpring</b><br>
+                    JWT Token 을 생성하여 유저별로 발급을 진행하고, Client 의 요청에 담겨있는 JWT Token 을 검사하여 유효한 요청인지를 확인하는 Interceptor 를 개발하였습니다.<br>
+                    만약 유효하지 않다면, 그에 맞는 Http Status Code 를 전송해 Client 에서 재발급을 유도할 수 있게끔 개발하였습니다.<br>
+                    JWT Token 의 생존 주기가 길지는 않으나 혹시 모를 탈취 위험에 대비해 Redis 를 이용하여 이용 가능한 Token 들에 대해 관리를 할 수 있게 개발하였습니다.<br>
+                    그리고 Spring 의 WebSocket 을 이용하여 결제 완료 여부를 전송하는 등 중요 로직에 대해 개발하였습니다.<br>
+                    그 외에는 Retrofit 을 이용해 Main Server 로 API 를 보내는 로직을 개발하였습니다.<br><br>
+                    <b>ㆍAngular.js</b><br>
+                    angular.json(Angular.js 설정파일)을 수정하여 빌드 시간을 최대로 줄여 개발 효율을 높였습니다.<br>
+                    미디어 쿼리를 이용해 휴대폰 기종 별 사이즈 대응을 진행했습니다.<br>
+                    통합 SCSS 파일에 반응형 단위를 작성하여 개발 효율을 높였습니다.<br>
+                    주문이 가능한 매장을 불러와 카카오맵 API 를 이용해 표시하는 기능을 개발하였습니다.<br>
+                    사용자가 주문한 메뉴에 대해 판매가액, 세액을 계산하고 실제 신용카드 및 복지카드 결제 로직을 개발하였습니다.<br>
+                    휴대폰 인증 및 이메일 인증에 대해 개발을 진행하였습니다.<br>
+                    Angular.js 특성 상 Refresh 가 되면 Session 을 모두 잃어버려 변수가 사라지는 현상을 막을 수 있는 로직에 대해 개발하였습니다.<br>
+                    JWT Token 을 관리하는 서비스를 개발하였습니다.<br>
+                    Stomp.js 를 이용해 Spring WebSocket 에 연결할 수 있는 서비스를 개발하였습니다.<br>
+                    TypeScript ↔ Native Application 을 연동하여 TypeScript 에서 Native 함수를 실행시킬 수 있는 서비스를 개발하였습니다.<br><br>
+                    <b>ㆍDatabase & 쿼리 및 프로시저 작성 </b><br>
+                    회원가입, 회원인증, 로그인 등 회원에 관련된 프로시저를 모두 작성하였습니다.<br>
+                    회원에 대한 정보를 불러오거나 매장에 대한 정보를 불러오는 프로시저 및 쿼리를 작성하였습니다.<br>
+                    판매 품목에 대해 가격을 책정하는 프로시저, 판매 내역을 불러오는 프로시저 및 쿼리를 작성하였습니다.<br>
+                    고객들의 데이터를 보안처리 하기 위해 단방향 암호화를 적용하여 패스워드를 암호화시키고, MS-SQL에서 제공하는 대칭키 기능을 이용해 일부 회원 정보를 마스킹 처리 하였습니다.<br><br>
+                    <b>ㆍBuild & Deploy Script</b><br>
+                    Jenkins 에서 Build & Deploy Script 를 작성하였습니다.(ssh 를 이용해 실제 운영서버에 접속 후 File Copy 방식)<br><br>
+                    <b>ㆍKotlin(Android) & Swift(iOS)</b><br>
+                    Firebase 연동을 통해 User 별 Notification 을 줄 수 있는 서비스를 개발하였습니다.<br>
+                    WebView 에 나오는 Client 와 Native 를 연동하기 위해 JavascriptInterface 서비스를 개발하였습니다.<br>
+                    차 후 QR 주문 서비스 개발을 위해 QR 코드 Scan 을 진행할 수 있는 서비스를 개발하였습니다.<br>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End #about -->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="heading">Project Issue</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    <b>ㆍ새로고침시 데이터를 잃어버리는 현상</b><br>
+                    결제모듈을 개발하는 도중 결제모듈에서 결제가 완료되면 Refresh Status Code 를 전달하여 데이터가 모두 초기화 되는 이슈가 있었습니다.<br>
+                    해당 증상을 막고자 Native Application 에 핵심 변수를 저장해놓고, Refresh 감지 및 결제 종료 값이 WebSocket 으로 전달된다면 Native 에서 꺼내와 변수를 다시 불러오는 방법으로 해결했습니다.<br><br>
+                    <b>ㆍTypeScript 에서 외부 Library 참조</b><br>
+                    JavaScript 에서는 외부 Library 를 Import 하고 new 생성자를 통해 불러오면 됐지만, TypeScript 에서는 불가능 했습니다.<br>
+                    때문에 해당 문제를 해결하느라 여러 방법을 시도했었는데 'declare var ~~' 문을 통해 해결하였습니다.<br><br>
+                    <b>ㆍPerformance</b><br>
+                    사용자의 기기마다 성능이 틀리기 때문에 저희는 속도를 저하 시키는 로직을 제거 했어야 했습니다.<br>
+                    속도 향상을 위해 forEach 문을 전부 제거하고, for 문으로 교체하고 Image 를 모두 최대한 가볍게 만드는 작업을 진행했습니다.<br>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End #about -->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="heading">Project Review</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    <b>ㆍ아쉬운 부분</b><br>
+                    컴포넌트 분리가 제대로 이루어지지 않았고, 외부 라이브러리를 끌어와 사용하는 작업이 많다보니 코드가 깔끔하지 않아 아쉬웠습니다.<br>
+                    서버가 2개로 분리되어 운영이 되고 있는데, 해당 부분이 사실 너무 과한 작업이 이루어지지 않았나 싶습니다.<br>
+                    이 당시 Subway KIOSK 작업을 할 때 처럼 Gradle 로 Build 파일을 하나로 합칠 수 있는 것을 알았다면, 서버가 1대만 들어가 관리 면에서 용이 했을 것 이라 생각합니다.<br>
+                    당시 방법을 몰라 헤매다가 결국 Front / Back 서버를 분리 시켰던 점이 아쉽습니다.<br><br>
+                    <b>ㆍ전체적인 Review</b><br>
+                    Spring 을 처음부터 구조 잡고, 기반을 쌓는 작업을 처음 해봤습니다.<br>
+                    그동안 이미 작성되있는 프로젝트로 수정을 진행하거나, Spring 기반 파일들을 모두 가져오면서 사용하고 있었는데 보안 면에서 이슈가 되어 처음부터 새로 만들었던 프로젝트입니다.<br>
+                    JWT Token 을 개발하는데 꽤나 머리가 아팠던 것으로 기억합니다.<br>
+                    그럼에도 JWT Token 기능을 십분 활용하지 못하고, 일부만 활용된 것을 보면 아쉬울 뿐 입니다.<br>
+                    (JWT 내에 ID 만 담고 사용하고 있었는데, 패스워드도 BCrypt 처리 하여 JWT Payload 에 같이 담아 사용했다면 더 좋은 결과가 있지 않았을까 합니다.)<br>
+                    Native Application 을 만들고 앱스토어/구글플레이스토어 에 출시하는 것은 꽤나 어려운 작업이었던 것으로 기억에 남습니다.<br>
+                    안드로이드는 비교적 쉽게 출시를 진행했는데, 앱스토어에 출시를 하기 위해서 여러 인증서를 등록하고 컨펌받고 했던 것을 생각하면 좋은 경험인 것 같습니다.<br>
+                    해당 프로젝트에 TDD 도입이 되어 있다면 작업이 매끄럽게 흘러가지 않았을까, 생각도 되며 TDD 의 필요성이 계속 와닿고 있습니다.<br><br>
+                    결제 모듈을 사용하는 것은 상당히 힘들었습니다. 여러 난관이 있었는데, 잘 헤쳐 나가 마무리를 지었습니다.<br>
+                    (하지만 출시 2일을 앞두고 모듈이 바뀌면서 다시 개발 하고 iOS 심사 받느라 계속 모니터링 했던 것을 생각하면 잘 마무리가 된 것도 아니지 않나 싶습니다..)<br><br>
+                    처음으로 Android & iOS 를 불특정 사용자에게 배포해본 특별한 프로젝트입니다.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End #about -->
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5 copyright">
+                <p>
+                    Copyright &copy; 2021 신용하
+                </p>
+            </div>
+            <div class="col-sm-2 top">
+                <span id="to-top">
+                    <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                </span>
+            </div>
+            <div class="col-sm-5 social">
+                <ul>
+                    <li>
+                        <i aria-hidden="true"><a href="https://y0ngha.tistory.com/" target="_blank">Blog</a></i>
+                    </li>
+                    <li>
+                        <i aria-hidden="true">dev.y0ngha@gmail.com</i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="../js/scripts.min.js"></script>
+</body>
+</html>
