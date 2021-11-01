@@ -95,7 +95,7 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <p style="line-height: 2.5rem"
+                <p style="line-height: 2.5rem">
                     <b>ㆍ새로고침시 데이터를 잃어버리는 현상</b><br>
                     결제모듈을 개발하는 도중 결제모듈에서 결제가 완료되면 Refresh Status Code 를 전달하여 데이터가 모두 초기화 되는 이슈가 있었습니다.<br>
                     해당 증상을 막고자 Native Application 에 핵심 변수를 저장해놓고, Refresh 감지 및 결제 종료 값이 WebSocket 으로 전달된다면 Native 에서 꺼내와 변수를 다시 불러오는 방법으로 해결했습니다.<br><br>

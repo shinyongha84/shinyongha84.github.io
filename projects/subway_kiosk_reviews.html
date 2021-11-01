@@ -61,14 +61,13 @@
                     현재 Local Storage 에 있는 sha512 파일과 AWS S3에 접속하여 최신 sha512 파일을 비교하여 업데이트를 진행하는 로직을 개발하였습니다.<br>
                     Core Module 들은 Facade 패턴을 이용하여 사용하기 때문에 Front 에서 복잡한 데이터를 보내지 않아도 되게 개발하였습니다.<br>
                     또한 Core Module 은 모두 Project 를 분리시켜 코드관리에 신경썼으며, 해당 Module 들은 Maven Publish 를 통해 사내 Nexus 에 올라가게
-                    하였습니다.<br>
-                    Front 가 웹 기반이기 때문에 JXBrowser 를 통해 보여주고 있습니다.<br><br>
+                    하였습니다.<br><br>
                     <b>ㆍBuild & Deploy Logic</b><br>
                     빌드 로직은 Gradle Kotlin DSL 을 이용해 개발하였습니다.<br>
                     Gradle 에 신규 Task 를 생성하여 해당 Task 가 실행되면 React.js 를 Yarn Install → Yarn Build → File Copy 작업을 통해
                     Spring 의 resources 폴더로 옮겨주고 있습니다.<br>
                     위처럼 Build 를 진행하고 해당 파일을 bootJar Task 로 압축을 진행, 그리고 배포 로직을 실행하여 AWS S3 에 자동으로 업로드 되게 개발하였습니다.<br>
-                    이로써 Build & Deploy 자동화가 완료되었으며, Deploy 가 완료되면 Deploy 의 내용이 회사 협업 커뮤니케이션 프로그램에 올라오게 연동하였습니다.<br><br>
+                    이로써 Build & Deploy 자동화가 완료되었으며, Deploy 가 완료되면 Deploy 의 내용이 회사 협업 커뮤니케이션 툴에 메시지를 전송하여 유지보수에 용이하게 하였습니다..<br><br>
                 </p>
             </div>
         </div>
