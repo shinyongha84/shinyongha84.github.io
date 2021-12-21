@@ -99,8 +99,8 @@
                     Back-end 에서 그 외에도 Annotation 을 관리하여 없어도 되는 Annotation 을 제거 및 다른 방법이 있겠지만 아직 방법을 잘 몰라 계속 찾아보고 있습니다.<br>
                     Front-end 에서는 Back-end ↔ Front-end 간 데이터 통신을 최소화하고, 응답하여 받는 Snapshot 객체 또한 최소화하였습니다.<br>
                     이 외에도 다양한 Hook(useCallback, useMemo, useReducer, useQuery), 최상위 API(React.memo 등)를 이용해 Rendering 최적화를 진행하였습니다.<br>
-                    실제 Memomize Refactoring을 통해 화면 이동간의 불필요한 버벅임, 렌더링 등을 개선하여 속도를 체감할 만큼 빨라졌습니다.<br>
-                    현재 팀원들과 Code Review 를 통해 Refactoring 하고 있으며 성능향상을 위해 많은 방법을 시도하고 있습니다.<br><br>
+                    실제 Memomize 리팩토링을 통해 화면 이동간의 불필요한 버벅임, 렌더링 등을 개선하여 속도를 체감할 만큼 빨라졌습니다.<br>
+                    현재 팀원들과 Code Review 를 통해 리팩토링 하고 있으며 성능향상을 위해 많은 방법을 시도하고 있습니다.<br><br>
                 </p>
             </div>
         </div>
@@ -126,13 +126,14 @@
                     그리고 해당 프로젝트에 Clean architecture 를 지키며 개발 하려 하였으나 제대로 이루어지지 않은 것 같습니다.<br>
                     Domain(Business Rules) 영역과 Infrastructure 영역은 분리 되었으나, Dependency Rule 이 제대로 지켜지지 않았고, Domain 영역에 너무 많은 Dependency 가 들어간게 원인이 아닐까 생각하고 있습니다.<br>
                     (위 내용은 build.gradle.kts 정리를 통해 어느정도 지켰으나, SOLID 원칙에 위배가 너무 많이 되고 있어 실패했습니다.)<br>
-                    이 후 Refactoring을 통해 SOLID 원칙에 위배되지 않도록 다시 구조를 잡을 예정입니다.<br><br>
+                    이 후 리팩토링을 통해 SOLID 원칙에 위배되지 않도록 다시 구조를 잡을 예정입니다.<br><br>
                     <b>ㆍ전체적인 Review</b><br>
                     오랫동안 손대지 않았던 React를 다시 한번 경험해볼 수 있어 좋았습니다.<br>
                     그동안 써보지 않았던 많은 Hook, 개념을 다시 한번 정리할 수 있었고 성능 최적화를 위해 여러 시도를 한 것이 좋았습니다.<br>
                     Back-end 에서 나온 REST Api를 Swagger로 정리하고 Front-end에서는 Swagger 문서를 보며 진행하니, 서로 소통이 편했습니다.<br>
-                    (초기에는 제가 Back-end 설계 및 로직 작성을 통해 데이터를 보냈으며, 이 후 Front-end 개발에 참여해 개발 및 코드 Refactoring 을 진행하며 팀원들에게 잘못된 부분을 알려주기도 했습니다.)<br>
+                    (초기에는 제가 Back-end 설계 및 로직 작성을 통해 데이터를 보냈으며, 이 후 Front-end 개발에 참여해 개발 및 코드 리팩토링 을 진행하며 팀원들에게 잘못된 부분을 알려주기도 했습니다.)<br>
                     (Swagger 문서의 장점은 Front-end 에서 Swagger 문서를 불러올 수 있다는 점인데, 이 부분은 사용하지 못한 것 같아 아쉽습니다.)<br>
+                    이 프로젝트를 통해 React.js에 대해 자세히 알게되었고, 브라우저의 렌더링 과정을 생각하며 최소한의 렌더링으로 동작할 수 있게 작성했습니다.
                 </p>
             </div>
         </div>
