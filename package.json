@@ -1,7 +1,7 @@
 {
   "name": "devportfolio-template",
   "version": "1.2.2",
-  "description": "",
+  "description": "Used node verseion 6.17.1",
   "main": "js/scripts.js",
   "scripts": {
     "watch": "gulp watch"
