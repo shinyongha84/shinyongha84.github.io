@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>신용하 | Subway DID Project Reviews</title>
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+  <link rel="icon" href="../favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="../libs/font-awesome/css/font-awesome.min.css">
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+<div id="mobile-menu-open" class="shadow-large">
+  <i class="fa fa-bars" aria-hidden="true"></i>
+</div>
+<!-- End #mobile-menu-toggle -->
+<header>
+  <ul id="menu" class="shadow">
+    <li>
+      <a onclick="history.back()">돌아가기</a>
+    </li>
+  </ul>
+</header>
+
+<div id="project-reviews">
+  <div id="project-reviews-content">
+    <h1>Subway DID</h1>
+    <h2>Project Reviews</h2>
+    <h3>2022.01 ~ 2022.01</h3>
+  </div>
+  <!-- End #project-reviews-content -->
+
+  <div id="project-reviews-overlay" style="background: #009223;"></div>
+
+  <!-- End #project-reviews-down -->
+</div>
+
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="heading">My Work content</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <p style="line-height: 2.5rem">
+          제가 맡은 업무는 Kotlin(Android & ApiHttpd Server) / Front-end(React.js) 개발 업무 입니다.<br><br>
+          <b>ㆍKotlin</b><br>
+          Android에서 사용을 해야 하다 보니, Spring Boot로 진행하지 못해 DI를 조금 더 쉽게 진행하고자 Dagger2 를 사용하였습니다.<br>
+          Spring Boot에서 기존에 하던 역할과 같이 Rest API를 구축하기 위해 undertow를 사용했습니다.<br>
+          Android에서는 기본적으로 업데이트를 위해 권한 체크를 진행하며, sha512 Hash를 원격서버(AWS/S3)와 현재 갖고 있는 sha512를 비교해 업데이트를 진행합니다.<br>
+          이 후에는 React 에 yarn build --prod 명령어를 통해 빌드된 파일을 압축한 압축 파일을 서버에서 받아와 해당 압축파일을 푼 후 서버를 실행시키는 방식으로 React 를 호출합니다.(이 부분 또한 undertow를 이용해 구현하였습니다.)<br>
+          undertow를 이용하여 맵핑한 End Point 에는 Controller 에 구현한 함수를 연결해 Front-end 와 통신을 진행하고 있습니다.<br><br>
+          <b>ㆍFront-end(React.js)</b><br>
+          useQuery, useMutation(React-Query) Hook을 이용해 Custom Hook으로 작성하고, 이 Custom Hook을 테스트 주도 개발로 작성하였습니다.<br>
+          TDD를 통해 기능적인 부분과 렌더링 적인 부분을 모두 테스트를 진행하며 개발을 진행하였습니다.<br>
+          Jest와 React Testing Library를 사용하였습니다.<br>
+          Back-end와 통신을 위한 서비스, Hook을 모두 만들어 같이 개발하는 개발자들도 쉽게 사용할 수 있게 진행하였습니다.<br>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End #about -->
+
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="heading">Project Issue</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <p style="line-height: 2.5rem">
+          <b>ㆍTDD</b><br>
+          TDD를 제가 따로 공부하고 적용하기 위해 많은 노력을 했습니다.<br>
+          TDD는 저만 안다고해서 바로 현업에 적용할 수 있는 것이 아닌, 같이 개발하는 구성원들 또한 TDD를 어떻게 작성하고, 어떻게 효율적으로 쓰는가를 알아야 하기 때문에<br>
+          이 내용을 알려드리는게 힘들었습니다.<br>
+          하지만, TDD를 알려드리면서 라이브 코딩, 페어 코딩, 실습을 진행하며 많이 따라 오셔서 TDD를 처음 제대로 적용해본 케이스가 된 것 같아 좋습니다.<br>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End #about -->
+
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="heading">Project Review</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <p style="line-height: 2.5rem">
+          <b>ㆍ전체적인 Review</b><br>
+          기능 구현을 복잡하게 하지 않아도 되는 프로젝트였기 때문에 TDD를 잘 적용했다고 생각합니다.<br>
+          지금도 TDD를 제대로 작성하기가 힘든데도 이보다 큰 프로젝트에서 진행하게 될 경우 많은 어려움이 있었을 것 같은데 다행히 작은 프로젝트에서 먼저 경험해 참 다행이라 생각됩니다.<br>
+          테스트코드를 먼저 작성하고, 라이브 앱 코드를 작성하게 되니 버그도 줄어들고 리팩토링도 과감히 진행할 수 있어 좋았습니다.<br>
+          팀원들과의 코드리뷰 시간에도 테스트 코드를 보며 소통을 하고, 라이브 앱 코드를 보며 문제점을 찾아내니 쉽고 재밌었다고 생각됩니다.<br>
+          다음엔 이보다 조금 더 큰 프로젝트에서도 진행해보고 싶고, React 에서만 아닌 Angular 에서도 테스트 코드를 작성할 수 있도록 해야겠다고 생각 했습니다.<br>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End #about -->
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-5 copyright">
+        <p>
+          Copyright &copy; 2022 신용하
+        </p>
+      </div>
+      <div class="col-sm-2 top">
+                <span id="to-top">
+                    <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                </span>
+      </div>
+      <div class="col-sm-5 social">
+        <ul>
+          <li>
+            <i aria-hidden="true"><a href="https://y0ngha.tistory.com/" target="_blank">기술블로그</a></i>
+          </li>
+          <li>
+            <i aria-hidden="true"><a href="https://github.com/y0ngha" target="_blank">GitHub</a></i>
+          </li>
+          <li>
+            <i aria-hidden="true">dev.y0ngha@gmail.com</i>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="../js/scripts.min.js"></script>
+</body>
+</html>
